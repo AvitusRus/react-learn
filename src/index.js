@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './index.css';
 import App from './App';
 import Clock from './Clock';
-import './index.css';
+import Toggle from './Toggle';
+import LoggingButton from './LoggingButton'
 
 ReactDOM.render(
     <App />,
@@ -12,11 +14,20 @@ ReactDOM.render(
 function tick() {
     ReactDOM.render(
         <Clock />,
-        document.getElementById('app2')
+        document.getElementById('clock')
     );
 }
 
 setInterval(tick, 1000);
 
+ReactDOM.render(
+    <Toggle />,
+    document.getElementById('toggle')
+);
 
+
+ReactDOM.render(
+    <LoggingButton />,
+    document.getElementById('loggingButton')
+);
 
