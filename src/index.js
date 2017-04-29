@@ -5,6 +5,8 @@ import App from './App';
 import Clock from './Clock';
 import Toggle from './Toggle';
 import LoggingButton from './LoggingButton'
+import LoginControl from './LoginControl'
+import WarnBanner from './WarnBanner'
 
 ReactDOM.render(
     <App />,
@@ -31,3 +33,12 @@ ReactDOM.render(
     document.getElementById('loggingButton')
 );
 
+ReactDOM.render(
+    <LoginControl />,
+    document.getElementById('loginControl')
+);
+
+ReactDOM.render(
+    <WarnBanner />,
+    document.getElementById('warningBanner')
+);
