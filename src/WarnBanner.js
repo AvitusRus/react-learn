@@ -11,6 +11,17 @@ function WarningBanner(props) {
     );
 }
 
+
+function NumberList(props) {
+    const numbers = props.numbers;
+    const listitems = numbers.map((number) =>
+        <li key={number.toString()}>{number}</li>
+    );
+    return (
+        <ul>{listitems}</ul>
+    )
+}
+
 class WarnBanner extends Component {
 
 
@@ -26,27 +37,19 @@ class WarnBanner extends Component {
         }));
     }
 
-
-
     render() {
 
-
-        const numbers = [1,2,3,4,5];
-        const listitems = numbers.map((number) =>
-            <li>{number}</li>
-        );
-
+        const numbers = [1, 2, 3, 4, 5];
         return (
             <div>
                 <WarningBanner warn={this.state.showWarning}/>
                 <button onClick={this.handleToggleClick}>
                     {this.state.showWarning ? 'Hide' : 'Show'}
                 </button>
-                <ul>{listitems}</ul>
+                <NumberList numbers={numbers}/>
             </div>
         )
     }
-
 }
 
 export default WarnBanner;
