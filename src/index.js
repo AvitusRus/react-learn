@@ -9,6 +9,8 @@ import LoginControl from './LoginControl';
 import WarnBanner from './WarnBanner';
 import NameForm from './NameForm';
 import EssayForm from './EssayForm';
+import FlavorForm from './FlavorForm';
+import Reservation from './Reservation';
 
 
 ReactDOM.render(
@@ -54,4 +56,14 @@ ReactDOM.render(
 ReactDOM.render(
     <EssayForm />,
     document.getElementById('textarea')
+);
+
+ReactDOM.render(
+    <FlavorForm />,
+    document.getElementById('flavorform')
+);
+
+ReactDOM.render(
+    <Reservation />,
+    document.getElementById('reservation')
 );
