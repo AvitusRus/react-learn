@@ -11,6 +11,8 @@ import NameForm from './NameForm';
 import EssayForm from './EssayForm';
 import FlavorForm from './FlavorForm';
 import Reservation from './Reservation';
+import Calculator from './Calculator';
+import Calculator2 from './Calculator2';
 
 
 ReactDOM.render(
@@ -66,4 +68,13 @@ ReactDOM.render(
 ReactDOM.render(
     <Reservation />,
     document.getElementById('reservation')
+);
+
+ReactDOM.render(
+    <Calculator />,
+    document.getElementById('calculator')
+);
+ReactDOM.render(
+    <Calculator2 />,
+    document.getElementById('calculator2')
 );
