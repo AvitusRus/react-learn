@@ -13,6 +13,7 @@ import FlavorForm from './FlavorForm';
 import Reservation from './Reservation';
 import Calculator from './Calculator';
 import Calculator2 from './Calculator2';
+import Signup from './Signup';
 
 
 ReactDOM.render(
@@ -74,7 +75,13 @@ ReactDOM.render(
     <Calculator />,
     document.getElementById('calculator')
 );
+
 ReactDOM.render(
     <Calculator2 />,
     document.getElementById('calculator2')
+);
+
+ReactDOM.render(
+    <Signup />,
+    document.getElementById('signup')
 );
