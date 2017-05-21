@@ -21,3 +21,10 @@ body {
 .Dialog-message {
     font-size: larger;
 }
+
+.divider {
+    min-height: 20px;
+    background: olive;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
